@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+    margin: auto;
+}
+
+header{
+    margin-top: 50px;
+}
+
+
+main{
+    grid-template-columns: 1fr 1fr;
+    width:700px;
+    height: 350px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background-color:hsl(0, 0%, 100%) ;
+    margin-top: 60px;
+  
+}
+
+section{
+    width:90%;
+    height: 90%;
+    margin: 0 10px;
+    padding: 10px;
+    place-items: center;
+}
+
+.tipInput{
+    display: grid;
+    grid-gap: 0.4em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 3px;
+}
+
+.tipPercent{
+    background-color:hsl(183, 100%, 15%);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    margin-top: 6px;
+    color: white;
+    border-radius: 4px;
+
+}
+.customTip input{
+    width: 94px;
+    height: 35px;
+    margin-top: 6px;
+    text-align: right;
+    padding: 5px;
+    background-color:hsl(186, 52%, 88%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline-style: none;
+    outline-color: hsl(172, 67%, 45%);
+
+
+}
+.tip{
+    margin: 30px 0;
+}
+
+.bill input{
+    height: 35px;
+    background-color: hsl(186, 52%, 88%);
+    color: hsl(183, 100%, 15%);
+    background-image: url(./images/icon-dollar.svg);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 4px;
+    text-align: right;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    outline-style: none;
+    outline-color: hsl(172, 67%, 45%); 
+    
+}
+.bill{
+    display: flex;
+    flex-direction: column;
+}
+.billnumberPeople input{
+    background-image: url(./images/icon-person.svg);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}
+
+.numberPeople{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.errorMessage{
+    display: none;
+    color: red ;
+}
+
+
+.numberPeople input{
+    height: 35px;
+    background-color: hsl(186, 52%, 88%);
+    color: hsl(183, 100%, 15%);
+    background-image: url(./images/icon-person.svg);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 4px;
+    text-align: right;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    outline-style: none;
+    outline-color: hsl(172, 67%, 45%); 
+    
+}
+
+
+label{
+    font-size: 13px;
+}
+
+
+/* green section */
+
+.greenBox{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+   
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 5px;
+    color: hsl(184, 14%, 56%);
+    
+    
+}
+.green-spacing h1 {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.green-spacing h4{
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-top: 8px;
+
+}
+
+.green-spacing p {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.active{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.resetButton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+   
+
+}
+
+input:focus{
+    outline-style: auto;
+    outline-color: hsl(172, 67%, 45%);
+}
+
+.resetButton button{
+    width: 95%;
+    height: 35px;
+    text-transform: uppercase;
+    background-color:hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
+    border-style: none;
+    border-radius: 4px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.resetButton button:hover{
+    background-color:hsl(186, 75%, 39%) ;
+    color: hsl(183, 37%, 19%);
+    transition: ease-in 0.5s;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+    color: var(--neu-more-trans-white);
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+
+
+
+@media (max-width: 750px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 580px;
+        margin-top: 10px;
+        
+    }
+    
+    section{
+        height: 320px;
+        justify-content: space-around;
+    }
+
+    .tipInput{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 0.1em;
+        grid-row: 3px;
+        
+        
+        
+        
+    }
+
+    
+
+    .tips{
+        margin: 10px ;
+    
+    }
+
+
+    .split-view{
+        height: 210px;
+        
+        
+    }
+    .space-between{
+        
+        margin-top: 2px;
+    }
+
+    .space-between{
+        
+        margin: 12px 6px;
+        
+        
+        
+    }
+    
+    .btn button{
+        
+        margin-top: 2px;
+    
+    }
+
+    header{
+        margin-top: 10px;
+    }
+
+    .warning{
+        margin-top: 15px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+    
+    
+}
